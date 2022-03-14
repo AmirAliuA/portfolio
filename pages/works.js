@@ -8,7 +8,7 @@ import thumbWalknote from '../public/images/works/loginform.png'
 import arduinoImage from '../public/images/works/arduino.png'
 import snapchatUsernamesImages from '../public/images/works/su-start.png'
 import eCommerceImage from '../public/images/works/eCommerceImage.png'
-import covidDashboardJavaImage from '../public/images/works/covidDashboardJava.png'
+import covidDashboardJavaImage from '../public/images/works/covidJava.png'
 
 const Works = () => (
   <Layout title="Portfolio">
