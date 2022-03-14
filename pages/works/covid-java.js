@@ -43,7 +43,7 @@ const Work = () => (
         </ListItem>
       </List>
 
-      <WorkImage src="/images/works/covidDashboardJava.PNG" alt="coviddashboardjava" />
+      <WorkImage src="/images/works/covidDashboardJava.png" alt="coviddashboardjava" />
     </Container>
   </Layout>
 )
