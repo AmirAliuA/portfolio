@@ -8,7 +8,7 @@ import {
   List,
   ListItem,
   useColorModeValue,
-  chakra
+  chakra,
 } from '@chakra-ui/react'
 import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/article'
@@ -41,7 +41,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Amir Aliu
           </Heading>
-          <p>Full Stack Web Developer <br />(Music Producer / Indie Game Development Enthusiast)</p>
+          <p>Full Stack Web Developer</p>
         </Box>
         <Box
           flexShrink={0}
@@ -74,11 +74,10 @@ const Home = () => (
           About me
         </Heading>
         <Paragraph>
-          Im a full-stack developer based in Kosovo with a
-          passion for web &amp; software development. Proficient in fundamental 
+          Im a full-stack developer based in Kosovo with a 
+          passion for web &amp; software development. <br /> <br /> Proficient in fundamental 
           front-end languages and server-side languages. 
-          In-depth knowledge of MySQL and MongoDB. Skillful creating servers and databases for 
-          functionality and designing and developing APIs.{' '}
+          In-depth knowledge of MySQL and MongoDB. {' '}
         </Paragraph>
       </Section>
 
@@ -103,7 +102,7 @@ const Home = () => (
             <Link href="https://www.linkedin.com/in/amiraliu/" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="#5855f4"
                 leftIcon={<IoLogoLinkedin />}
               >
                 @amiraliu
@@ -114,7 +113,7 @@ const Home = () => (
             <Link href="https://github.com/AmirAliuA" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="#5855f4"
                 leftIcon={<IoLogoGithub />}
               >
                 @AmirAliuA
@@ -125,7 +124,7 @@ const Home = () => (
             <Link href="mailto:aaliu272@gmail.com" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="#5855f4"
                 leftIcon={<IoMailOutline />}
               >
                 E-Mail
@@ -140,7 +139,7 @@ const Home = () => (
             title="Portfolio"
             thumbnail={portfolioImage}
             scroll={false}
-            target="_self"
+            target="_blank"
           >
             Take a look at some of my work
           </GridItem>
@@ -149,6 +148,8 @@ const Home = () => (
             href="./amir_aliu_resume.pdf"
             title="Resume"
             thumbnail={resumeImage}
+            scroll={false}
+            target="_blank"
           >
             View my resume
           </GridItem>
