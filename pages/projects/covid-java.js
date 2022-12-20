@@ -7,7 +7,7 @@ import {
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, WorkImage, Meta } from '../../components/work'
+import { Title, WorkImage, Meta } from '../../components/project'
 import P from '../../components/paragraph'
 
 const Work = () => (
@@ -17,13 +17,7 @@ const Work = () => (
         Covid Dashboard Java <Badge>2022</Badge>
       </Title>
       <P>
-        walknote recommends new music you may like based on your music
-        preferences by recognizing your favorite songs stored in your device.
-        You can listen to recommended music just like a radio!
-      </P>
-      <P>
-        This service has been closed. Thank you for over 130,000 registered
-        users!
+        A COVID Dashboard implemented in Java & Spring Boot.
       </P>
       <List ml={4} my={4}>
         <ListItem>
@@ -43,7 +37,7 @@ const Work = () => (
         </ListItem>
       </List>
 
-      <WorkImage src="/images/works/covidJava.png" alt="coviddashboardjava" />
+      <WorkImage src="/images/projects/covidJava.png" alt="coviddashboardjava" />
     </Container>
   </Layout>
 )

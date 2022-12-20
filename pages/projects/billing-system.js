@@ -1,6 +1,6 @@
-import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react'
+import { Container, Badge, Link, List, ListItem, SimpleGrid } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, WorkImage, Meta } from '../../components/work'
+import { Title, WorkImage, Meta } from '../../components/project'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
@@ -53,6 +53,7 @@ const Work = () => (
           <span>View the Purchased & Sold Product (CRUD)</span>
         </ListItem>
       </List>
+      
       <WorkImage src="https://raw.githubusercontent.com/AmirAliuA/billing-system/master/Screenshots/login-dashboard.png" alt="Login Form" />
       <WorkImage src="https://raw.githubusercontent.com/AmirAliuA/billing-system/master/Screenshots/admin-dashboard.png" alt="Admin Dashboard" />
       <WorkImage src="https://raw.githubusercontent.com/AmirAliuA/billing-system/master/Screenshots/users-dashboard.png" alt="Users Dashboard" />

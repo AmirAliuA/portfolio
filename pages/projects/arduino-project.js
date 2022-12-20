@@ -3,42 +3,45 @@ import {
   Badge,
   Link,
   List,
-  ListItem
+  ListItem,
+  SimpleGrid,
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, WorkImage, Meta } from '../../components/work'
+import { Title, WorkImage, Meta } from '../../components/project'
 import P from '../../components/paragraph'
 
 const Work = () => (
-  <Layout title="Snapchat Usernames">
+  <Layout title="Arduino Project">
     <Container>
       <Title>
-        Snapchat Usernames <Badge>2020</Badge>
+        Arduino Project <Badge>2021</Badge>
       </Title>
       <P>
-       A python script to check if snapchat usernames are available or not. 
+        A very basic traffic light project in Arduino Uno for a University Assignment.
       </P>
 
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Platform</Meta>
-          <span>Any</span>
+          <span>Arduino Uno</span>
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>Python 3, Requests, PySimpleGUI</span>
+          <span>C++, Arduino Uno</span>
         </ListItem>
+
         <ListItem>
           <Meta>Source</Meta>
-          <Link href="https://github.com/AmirAliuA/snapchat-username">
+          <Link href="https://github.com/AmirAliuA/Basic-Arduino-Traffic-Light">
             Github <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
       </List>
 
-      <WorkImage src="/images/works/su-start.png" alt="start" />
-      <WorkImage src="/images/works/su-result.png" alt="result" />
+      <SimpleGrid columns={0} gap={2}>
+        <WorkImage src="https://camo.githubusercontent.com/0c98674b825a9dce9991f1cf1341f0e39d92fc5968b048ffdd8d098d91c8f219/68747470733a2f2f692e696d6775722e636f6d2f515644324c65762e706e67" alt="arduinoproject" />
+      </SimpleGrid>
     </Container>
   </Layout>
 )

@@ -8,7 +8,7 @@ import {
   Center,
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
-import { Title, WorkImage, Meta } from '../../components/work'
+import { Title, WorkImage, Meta } from '../../components/project'
 import P from '../../components/paragraph'
 
 const Work = () => (
@@ -116,13 +116,13 @@ const Work = () => (
       </SimpleGrid>
 
       <SimpleGrid columns={1} gap={0}>
-        <WorkImage src="/images/works/products-main-screen.png" alt="productsmainscreen" />
-        <WorkImage src="/images/works/products-screen.png" alt="productsscreen" />
-        <WorkImage src="/images/works/home.png" alt="homescreen" />
+        <WorkImage src="/images/projects/products-main-screen.png" alt="productsmainscreen" />
+        <WorkImage src="/images/projects/products-screen.png" alt="productsscreen" />
+        <WorkImage src="/images/projects/home.png" alt="homescreen" />
       </SimpleGrid>
 
       <SimpleGrid columns={0} gap={0}>
-        <WorkImage src="/images/works/eCommerce-logo.png" alt="logo" />
+        <WorkImage src="/images/projects/eCommerce-logo.png" alt="logo" />
       </SimpleGrid>
     </Container>
   </Layout>

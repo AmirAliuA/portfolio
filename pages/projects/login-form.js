@@ -8,7 +8,7 @@ import {
   Center
 } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, WorkImage, Meta } from '../../components/work'
+import { Title, WorkImage, Meta } from '../../components/project'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
@@ -38,16 +38,6 @@ const Work = () => (
       <Heading as="h4" fontSize={16} my={6}>
         <Center>Media coverage</Center>
       </Heading>
-
-      {/*<Box>
-        <iframe
-          src="https://player.vimeo.com/video/146373709"
-          width="100%"
-          height="400"
-          frameBorder="0"
-          allowFullScreen
-        />
-      </Box> */}
 
       <WorkImage
         src="https://camo.githubusercontent.com/1762eca1ab59fb6882c3a59b3ddc1ca6c269a1e62e5271813bb218a4ba57942e/68747470733a2f2f692e696d6775722e636f6d2f5241566e7a76512e706e67"

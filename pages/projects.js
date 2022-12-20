@@ -3,23 +3,23 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import billingsystemImage from '../public/images/works/admin-dashboard.png'
-import thumbWalknote from '../public/images/works/loginform.png'
-import arduinoImage from '../public/images/works/arduino.png'
-import snapchatUsernamesImages from '../public/images/works/su-start.png'
-import eCommerceImage from '../public/images/works/eCommerceImage.png'
-import covidDashboardJavaImage from '../public/images/works/covidJava.png'
+import billingSystemImage from '../public/images/projects/admin-dashboard.png'
+import covidDashboardJavaImage from '../public/images/projects/covidJava.png'
+import loginForm from '../public/images/projects/loginform.png'
+import arduinoImage from '../public/images/projects/arduino.png'
+import snapchatUsernamesImages from '../public/images/projects/su-start.png'
+import eCommerceImage from '../public/images/projects/eCommerceImage.png'
 
 const Works = () => (
-  <Layout title="Portfolio">
+  <Layout title="Projects">
     <Container>
-      <Heading as="h3" fontSize={20} mb={4}>
+    <Heading as="h3" fontSize={20} mb={4}>
         Software
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="billingsystem" title="Billing System (C#)" thumbnail={billingsystemImage}>
+          <WorkGridItem id="billing-system" title="Billing System (C#)" thumbnail={billingSystemImage}>
           A simple Billing System written for a University Assignment
           </WorkGridItem>
         </Section>
@@ -32,9 +32,9 @@ const Works = () => (
         
         <Section>
           <WorkGridItem
-            id="loginform"
+            id="login-form"
             title="Login Form (C#)"
-            thumbnail={thumbWalknote}
+            thumbnail={loginForm}
           >
             A simple login form written for a University Assignment
           </WorkGridItem>
@@ -67,7 +67,7 @@ const Works = () => (
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.3}>
           <WorkGridItem
-            id="ecommerce"
+            id="eCommerce"
             thumbnail={eCommerceImage}
             title="eCommerce Website Application (Next.JS)"
           >
