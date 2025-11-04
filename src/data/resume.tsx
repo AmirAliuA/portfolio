@@ -6,9 +6,8 @@ export const DATA = {
   initials: "AA",
   url: "https://amiraliu.vercel.app",
   location: "Kosovo",
-  locationLink: "https://www.google.com/maps/place/kosovo",
   description:
-    "I'm a full-stack developer who loves building fast, modern web apps with React, Next.js, and TypeScript. I enjoy making things that work smoothly and feel great to use.",
+    "A full-stack developer from Kosovo with a passion for building things across web, software, and game development — and a growing curiosity for cybersecurity and networking.",
   summary:
     "I enjoy building reliable, well-structured solutions. I've worked with a range of technologies and tools, and I'm always looking to improve how I work and what I create. Right now, I'm focused on shipping useful, polished projects and growing my skill set through hands-on work.",
   avatarUrl: "/me.jpg",
@@ -38,27 +37,23 @@ export const DATA = {
   ],
   contact: {
     email: "amiraliudev@gmail.com",
-    tel: "",
     social: {
       GitHub: {
         name: "GitHub",
         url: "https://github.com/AmirAliuA",
         icon: Icons.github,
-
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/amiraliu/",
         icon: Icons.linkedin,
-
         navbar: true,
       },
       X: {
         name: "X",
         url: "https://x.com/amiraliudev",
         icon: Icons.x,
-
         navbar: true,
       },
       Youtube: {
@@ -71,12 +66,10 @@ export const DATA = {
         name: "Send Email",
         url: "mailto:amiraliudev@gmail",
         icon: Icons.email,
-
         navbar: false,
       },
     },
   },
-
   work: [
     {
       company: "Independent",
@@ -84,10 +77,11 @@ export const DATA = {
       badges: [],
       location: "Remote",
       title: "Freelance Web Developer",
-      logoUrl: "/work-experience/freelancer.gif",
+      logoUrl: "",
       start: "Present",
       end: "",
-      description: "Coded & maintained small-scale/medium-scale websites for gaming communities, and other clients.",
+      description: 
+        "Website design, development, and maintenance for communities and small-to-medium clients. Delivered responsive, user-focused solutions and ongoing technical support.",
     },
     {
       company: "Independent",
@@ -95,11 +89,11 @@ export const DATA = {
       badges: [],
       location: "Remote",
       title: "Community Manager, Developer, and Systems Administrator",
-      logoUrl: "/work-experience/freelancer.gif",
+      logoUrl: "",
       start: "2014",
       end: "2018",
       description:
-        "Designed, deployed, and maintained high-availability server infrastructures across Windows, Ubuntu, and CentOS to support gaming communities with thousands of concurrent users. Developed and implemented custom game modes to enhance user engagement, built and managed community websites and forums to centralize resources and streamline communication, and automated server administration tasks with custom scripts. Improved performance and reliability through regular patching and optimization, enforced community guidelines, and coordinated events and support with community members to maintain a positive and collaborative environment.",
+        "Managed gaming communities as a Developer and Systems Administrator, designing and maintaining high-availability servers on Windows, Ubuntu, and CentOS. Developed custom game modes, automated server tasks, and optimized performance and reliability. Built and maintained community websites and forums, coordinated events, and fostered a positive player environment.",
     },
     {
       company: "Musa Zajmi",
@@ -107,10 +101,11 @@ export const DATA = {
       badges: [],
       location: "Gjilan, Kosovo",
       title: "Technical Support Volunteer",
-      logoUrl: "/work-experience/technology.gif",
+      logoUrl: "",
       start: "2013",
       end: "2018",
-      description: `Troubleshot and resolved technical issues across PCs, laptops, and printers in a school environment. Supported staff and peers in the setup and upkeep of classroom technology. Delivered informal IT assistance during daily activities and school events. Guided teachers and students in effectively using software tools such as Microsoft Office and educational platforms.`,
+      description: 
+        `Provided technical support for PCs, laptops, and printers in a school environment. Assisted with setup and maintenance of classroom technology, supported staff and students during daily activities and events, and guided users in software tools like Microsoft Office and educational platforms.`,
     },
   ],
   education: [
@@ -738,8 +733,7 @@ export const DATA = {
       href: "/projects/snapchat-usernames",
       dates: "April 2021",
       active: false,
-      description:
-        "A python script to check if snapchat usernames are available or not.",
+      description: "A python script to check if snapchat usernames are available or not.",
       technologies: [
         "Python",
         "Requests",
@@ -768,20 +762,129 @@ export const DATA = {
       ]
     },
   ],
-  hackathons: [
+  certifications: [
     {
-      title: "SOC Level 1",
-      dates: "ONGOING",
-      location: "Remote, TryHackMe",
-      description:
-        "Gaining hands-on experience in monitoring, detecting, and responding to cybersecurity threats in a Security Operations Center (SOC) environment.",
-      image: "tryhackme-logo.jpg",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
+      title: "Hardware and Upgrade Support",
+      dates: "September 11, 2025",
+      location: "Remote, Cisco Networking Academy",
+      description: 
+        "Focused on diagnosing, repairing, and upgrading computer components. Gained hands-on experience troubleshooting hardware issues such as power supply and hard drive failures, performing system upgrades including RAM and storage installations, and following proper safety procedures. Developed foundational skills in PC maintenance and hardware optimization for entry-level IT support roles.",
+      image: "/certifications/badges/security-and-connectivity-support.png",
       links: [
         {
-          title: "TryHackMe Course",
-          icon: <Icons.tryhackme className="h-4 w-4" />,
-          href: "https://tryhackme.com/path/outline/soclevel1",
+          title: "Course",
+          icon: <Icons.cisco className="h-4 w-4" />,
+          href: "https://www.netacad.com/courses/security-connectivity-support?courseLang=en-US",
+        },
+        {
+          title: "Credly Badge",
+          icon: <Icons.credly className="h-4 w-4" />,
+          href: "https://www.credly.com/badges/f8e0b6e3-4ef0-4ae2-8652-870ba9a1dc17",
+        },
+        {
+          title: "Certificate",
+          icon: <Icons.cisco className="h-4 w-4" />,
+          href: "/certifications/pdfs/Hardware-and-Upgrade-Support-Certificate.pdf",
+        },
+      ],
+    },
+    {
+      title: "Security and Connectivity Support",
+      dates: "September 10, 2025",
+      location: "Remote, Cisco Networking Academy",
+      description: 
+        "Focused on diagnosing network and device connectivity issues while maintaining strong cybersecurity practices. Learned to identify and mitigate common security threats, recognize social engineering tactics, and apply data protection policies. Developed skills in troubleshooting network resources and ensuring secure, reliable IT support operations.",
+      image: "/certifications/badges/security-and-connectivity-support.png",
+      links: [
+        {
+          title: "Course",
+          icon: <Icons.cisco className="h-4 w-4" />,
+          href: "https://www.netacad.com/courses/security-connectivity-support?courseLang=en-US",
+        },
+        {
+          title: "Credly Badge",
+          icon: <Icons.credly className="h-4 w-4" />,
+          href: "https://www.credly.com/badges/6daf4e9b-71a9-461e-87a7-bd86c59aedca",
+        },
+        {
+          title: "Certificate",
+          icon: <Icons.cisco className="h-4 w-4" />,
+          href: "/certifications/pdfs/Security-and-Connectivity-Support-Certificate.pdf",
+        },
+      ],
+    },
+    {
+      title: "Operating Systems Support",
+      dates: "September 09, 2025",
+      location: "Remote, Cisco Networking Academy",
+      description: 
+        "Foundational course on Operating Systems Support focused on troubleshooting Windows, macOS, and mobile platforms. Gained hands-on experience diagnosing and resolving common IT issues such as software crashes, boot failures, and connectivity problems. Developed skills in customer service, software installation, and cross-platform compatibility to prepare for entry-level IT support roles.",
+      image: "/certifications/badges/operating-systems-support.png",
+      links: [
+        {
+          title: "Course",
+          icon: <Icons.cisco className="h-4 w-4" />,
+          href: "https://www.netacad.com/courses/operating-systems-support?courseLang=en-US",
+        },
+        {
+          title: "Credly Badge",
+          icon: <Icons.credly className="h-4 w-4" />,
+          href: "https://www.credly.com/badges/0643c0dd-ef4e-4043-bd1c-c1693b0e7803",
+        },
+        {
+          title: "Certificate",
+          icon: <Icons.cisco className="h-4 w-4" />,
+          href: "/certifications/pdfs/Operating-Systems-Support-Certificate.pdf",
+        },
+      ],
+    },
+    {
+      title: "IT Customer Support Basics",
+      dates: "August 31, 2025",
+      location: "Remote, Cisco Networking Academy",
+      description: 
+        "Introductory course on IT Customer Support covering help desk operations, troubleshooting, and customer communication. Gained hands-on experience with remote support tools, issue management, and problem resolution in diverse computing environments.",
+      image: "/certifications/badges/it-customer-support-basics.png",
+      links: [
+        {
+          title: "Course",
+          icon: <Icons.cisco className="h-4 w-4" />,
+          href: "https://www.netacad.com/courses/it-customer-support-basics?courseLang=en-US",
+        },
+        {
+          title: "Credly Badge",
+          icon: <Icons.credly className="h-4 w-4" />,
+          href: "https://www.credly.com/badges/326f59f3-0d8c-4cb1-8896-d95c7b6faf8e",
+        },
+        {
+          title: "Certificate",
+          icon: <Icons.cisco className="h-4 w-4" />,
+          href: "/certifications/pdfs/IT-Customer-Support-Basics-Certificate.pdf",
+        },
+      ],
+    },
+    {
+      title: "Python Essentials 1",
+      dates: "January 01, 2025",
+      location: "Remote, Cisco Networking Academy & OpenEDG Python Institute",
+      description: 
+        "Introductory Python course covering syntax, control structures, functions, and data types, with hands-on programming exercises.",
+      image: "/certifications/badges/python-essentials-i.png",
+      links: [
+        {
+          title: "Course",
+          icon: <Icons.cisco className="h-4 w-4" />,
+          href: "https://www.netacad.com/courses/python-essentials-1?courseLang=en-US",
+        },
+        {
+          title: "OpenEDG Python Institute",
+          icon: <Icons.cisco className="h-4 w-4" />,
+          href: "https://pythoninstitute.org/python-essentials-1",
+        },
+        {
+          title: "Certificate",
+          icon: <Icons.cisco className="h-4 w-4" />,
+          href: "/certifications/pdfs/python-essentials-1-cisco.pdf",
         },
       ],
     },
@@ -789,11 +892,9 @@ export const DATA = {
       title: "Introduction to Cybersecurity",
       dates: "June 15, 2024",
       location: "Remote, Cisco Networking Academy & Netdevgroup",
-      description:
-        "Completed an introductory cybersecurity course covering foundational concepts such as threat types, attack vectors, cybersecurity principles, and the importance of security in the digital world. Gained insight into careers in cybersecurity and best practices for protecting data, devices, and networks.",
+      description: 
+        "Introductory cybersecurity course covering foundational concepts such as threat types, attack vectors, cybersecurity principles, and the importance of security in the digital world. Gained insight into careers in cybersecurity and best practices for protecting data, devices, and networks.",
       image: "/certifications/badges/introduction-to-cybersecurity.png",
-      win: "Best Data Hack",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg",
       links: [
         {
           title: "Course",
@@ -801,7 +902,12 @@ export const DATA = {
           href: "https://www.netacad.com/courses/introduction-to-cybersecurity",
         },
         {
-          title: "Cisco Certificate",
+          title: "Credly Badge",
+          icon: <Icons.credly className="h-4 w-4" />,
+          href: "https://www.credly.com/badges/0af3c054-436a-4ad2-8d92-b0f821a9c982",
+        },
+        {
+          title: "Certificate",
           icon: <Icons.pdf className="h-4 w-4" />,
           href: "/certifications/pdfs/introduction-to-cybersecurity-badge-cisco.pdf",
         },
@@ -811,8 +917,8 @@ export const DATA = {
       title: "NDG LINUX UNHATCHED ENGLISH 0723B CGA",
       dates: "July 30, 2023",
       location: "Remote, Cisco Networking Academy & Netdevgroup",
-      description:
-        "Completed an introductory Linux course covering fundamental command-line operations, file system navigation, user and permissions management, and basic shell commands. Gained practical experience using the Linux terminal to perform system tasks and understand open-source operating systems.",
+      description: 
+        "Introductory Linux course covering fundamental command-line operations, file system navigation, user and permissions management, and basic shell commands. Gained practical experience using the Linux terminal to perform system tasks and understand open-source operating systems.",
       image: "/certifications/badges/ndg-linux-unhatched.jpg",
       win: "Best Data Hack",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg",
@@ -831,33 +937,6 @@ export const DATA = {
           title: "Netdevgroup Certificate",
           icon: <Icons.pdf className="h-4 w-4" />,
           href: "/certifications/pdfs/ndg-linux-unhatched-certificate-ndg.pdf",
-        },
-      ],
-    },
-    {
-      title: "Python Essentials 1",
-      dates: "January 01, 2025",
-      location: "Remote, Cisco Networking Academy & OpenEDG Python Institute",
-      description:
-        "Completed an introductory Python course covering syntax, control structures, functions, and data types, with hands-on programming exercises.",
-      image: "/certifications/badges/python-essentials-i.png",
-      win: "Best Data Hack",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg",
-      links: [
-        {
-          title: "Course",
-          icon: <Icons.cisco className="h-4 w-4" />,
-          href: "https://www.netacad.com/courses/python-essentials-1?courseLang=en-US",
-        },
-        {
-          title: "OpenEDG Python Institute",
-          icon: <Icons.cisco className="h-4 w-4" />,
-          href: "https://pythoninstitute.org/python-essentials-1",
-        },
-        {
-          title: "Certificate",
-          icon: <Icons.cisco className="h-4 w-4" />,
-          href: "/certifications/pdfs/python-essentials-1-cisco.pdf",
         },
       ],
     },

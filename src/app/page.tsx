@@ -1,4 +1,4 @@
-import { HackathonCard } from "@/components/hackathon-card";
+import { CertificationCard } from "@/components/certification-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
@@ -6,6 +6,7 @@ import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
+import { LocateFixed, Zap } from "lucide-react";
 import Link from "next/link";
 import Markdown from "react-markdown";
 
@@ -37,6 +38,18 @@ export default function Page() {
               </Avatar>
             </BlurFade>
           </div>
+          <BlurFade delay={BLUR_FADE_DELAY}>
+            <div className="flex flex-wrap gap-1 h-full w-full">
+              <Badge variant="outline" className="cursor-pointer group">
+                <LocateFixed className="size-4 mr-1 group-hover:text-green-500" />
+                {DATA.location}
+              </Badge>
+              <Badge variant="outline" className="hidden md:flex cursor-pointer group">
+                <Zap className="size-4 mr-1 group-hover:text-yellow-400" />
+                Available for Work
+              </Badge>
+            </div>
+          </BlurFade>
         </div>
       </section>
       <section id="about">
@@ -123,7 +136,7 @@ export default function Page() {
                   Check out my latest work
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  When I’m not coding web apps, I&apos;m diving into game development, cybersecurity, and networking — just exploring cool tech and pushing myself to learn new things.
+                  {/*'When I’m not coding web apps, I&apos;m diving into game development, cybersecurity, and networking — just exploring cool tech and pushing myself to learn new things.'*/}
                 </p>
               </div>
             </div>
@@ -150,7 +163,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="hackathons">
+      <section id="certifications">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -159,22 +172,22 @@ export default function Page() {
                   Certifications
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  I like building things
+                  I&apos;m always expanding my skills through certifications
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I&apos;m always working on expanding my skills through certifications. Whether it&apos;s diving into cybersecurity, networking, or programming, I enjoy gaining new knowledge and pushing myself to master different areas of tech.
+                  Whether it&apos;s diving into cybersecurity, networking, or programming, I enjoy gaining new knowledge and pushing myself to master different areas of tech.
                 </p>
               </div>
             </div>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 14}>
             <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
-              {DATA.hackathons.map((project, id) => (
+              {DATA.certifications.map((project, id) => (
                 <BlurFade
                   key={project.title + project.dates}
                   delay={BLUR_FADE_DELAY * 15 + id * 0.05}
                 >
-                  <HackathonCard
+                  <CertificationCard
                     title={project.title}
                     description={project.description}
                     location={project.location}
@@ -185,29 +198,6 @@ export default function Page() {
                 </BlurFade>
               ))}
             </ul>
-          </BlurFade>
-        </div>
-      </section>
-      <section id="contact">
-        <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 16}>
-            <div className="space-y-3">
-              <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                Contact
-              </div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                Get in Touch
-              </h2>
-              <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                <Link
-                  href={DATA.contact.social.email.url}
-                  className="text-blue-500 hover:underline"
-                >
-                  Send me an email
-                </Link>{" "}
-                and I&apos;ll respond whenever I can.
-              </p>
-            </div>
           </BlurFade>
         </div>
       </section>
